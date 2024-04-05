@@ -1,0 +1,14 @@
+.optionsHeader {
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    align-self: flex-start;
+  }
+}
+
+.optionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

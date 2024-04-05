@@ -1,0 +1,14 @@
+.grid {
+  display: grid;
+  gap: 20px;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(4, 1fr);
+
+  @media (max-width: 850px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 550px) {
+    grid-template-columns: 1fr;
+  }
+}

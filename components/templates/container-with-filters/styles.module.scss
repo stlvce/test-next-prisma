@@ -1,0 +1,11 @@
+@import "../../../styles/variables.module";
+
+.searchPage {
+  display: flex;
+}
+
+.container {
+  @include flexColumn;
+  padding: 20px;
+  flex: 1;
+}

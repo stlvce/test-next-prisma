@@ -1,0 +1,21 @@
+@import "../../../styles/variables.module";
+
+.header {
+  background-color: $header-color;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.44) 1px 1px 8px;
+  z-index: 50;
+
+  position: sticky;
+  top: 0;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+
+  padding: 20px;
+
+  list-style: none;
+}

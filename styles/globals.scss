@@ -1,0 +1,15 @@
+@import "./variables.module";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}

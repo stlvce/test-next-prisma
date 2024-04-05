@@ -1,0 +1,32 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Car {
+  id                        Int     @id @default(autoincrement())
+  images                    String?
+  name                      String
+  description               String
+  price                     Int
+  contacts                  String
+  technical_characteristics TechnicalCharacteristics?
+}
+
+model TechnicalCharacteristics {
+  id             Int @id @default(autoincrement())
+  car            Car @relation(fields: [car_id], references: [id], onDelete: Cascade)
+  car_id         Int @unique
+  brand          String
+  model          String
+  productionYear Int
+  body           String
+  mileage        Int
+}
+
+
+
